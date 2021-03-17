@@ -36,7 +36,7 @@ var studenti = [
 
 //4. Ciclo su tutti gli studenti e stampo per ognuno di essi, nome e cognome.
 for (var i = 0; i < studenti.length; i++) {
-  console.log(studenti[i]["nome"] + " " + studenti[i]["cognome"]);
+  console.log("lo studente " + (i + 1) + " si chiama " + studenti[i]["nome"] + " " + studenti[i]["cognome"]);
 }
 
 //5. Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
