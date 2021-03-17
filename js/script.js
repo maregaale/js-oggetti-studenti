@@ -1,4 +1,4 @@
-// Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 // variabili
@@ -21,23 +21,28 @@ for (var key in studente) {
 // 3. creo un array di oggetti 'studenti'
 var studenti = [
   {
-    nome: Alessandro,
-    cognome: Marega,
+    nome: "Alessandro",
+    cognome: "Marega",
     eta: 28
   },
   {
-    nome: Mario,
-    cognome: Rossi,
+    nome: "Mario",
+    cognome: "Rossi",
     eta: 30
   },
   {
-    nome: Tazio,
-    cognome: Nuvolari,
+    nome: "Tazio",
+    cognome: "Nuvolari",
     eta: 65
   },
   {
-    nome: Pippo,
-    cognome: Sempronio,
+    nome: "Pippo",
+    cognome: "Sempronio",
     eta: 53
   },
 ];
+
+//4. Ciclo su tutti gli studenti e stampo per ognuno di essi, nome e cognome.
+for (var i = 0; i < studenti.length; i++) {
+  console.log(studenti[i]["nome"] + " " + studenti[i]["cognome"]);
+}
